@@ -5,4 +5,4 @@ install:
 	npm install
 
 test:
-	nbt verify
+	nbt verify --skip-layout-checks
