@@ -1,3 +1,4 @@
+/*jshint -W079*/
 'use strict';
 
 var catchNetworkErrors = require('./src/catch-network-errors');
