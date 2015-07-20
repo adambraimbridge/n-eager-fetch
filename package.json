@@ -1,0 +1,7 @@
+{
+  "n-eager-fetch",
+  "main": "main.js",
+  "dependencies": {
+    "node-fetch": "file:node-fetch"
+  }
+}
