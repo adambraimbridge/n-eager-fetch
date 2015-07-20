@@ -4,6 +4,6 @@
   "main": "main.js",
   "dependencies": {
     "next-build-tools": "^3.9.1",
-    "node-fetch": "file:node-fetch"
+    "node-fetch": "^1.3.1"
   }
 }
