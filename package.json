@@ -1,8 +1,9 @@
 {
-  "n-eager-fetch",
+  "name": "n-eager-fetch",
   "version": "0.0.0",
   "main": "main.js",
   "dependencies": {
+    "next-build-tools": "^3.9.1",
     "node-fetch": "file:node-fetch"
   }
 }
