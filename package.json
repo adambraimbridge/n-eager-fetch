@@ -1,5 +1,6 @@
 {
   "n-eager-fetch",
+  "version": "0.0.0",
   "main": "main.js",
   "dependencies": {
     "node-fetch": "file:node-fetch"
