@@ -2,7 +2,7 @@
 'use strict';
 
 var catchNetworkErrors = require('./src/catch-network-errors');
-var fetch = require('node-fetch');
+require('isomorphic-fetch');
 
 module.exports = function(url, opts) {
 	var retriesLeft = opts.retry === undefined ? 3 : opts.retry;
