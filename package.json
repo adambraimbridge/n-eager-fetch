@@ -2,6 +2,9 @@
   "name": "n-eager-fetch",
   "version": "0.0.0",
   "main": "main.js",
+  "scripts" : {
+    "release": "npm-prepublish --verbose && npm publish && git checkout package.json"
+  },
   "dependencies": {
     "ft-next-logger": "^1.1.2",
     "next-build-tools": "^3.9.1",
