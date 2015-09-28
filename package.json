@@ -1,16 +1,12 @@
 {
   "name": "n-eager-fetch",
-  "version": "0.0.0",
+  "version": "1.0.4",
   "main": "main.js",
-  "scripts": {
-    "release": "npm-prepublish --verbose && npm publish && git checkout package.json"
-  },
   "dependencies": {
-    "ft-next-logger": "^1.1.2",
+    "ft-next-logger": "^2.2.1",
     "isomorphic-fetch": "^2.1.1"
   },
   "devDependencies": {
-    "npm-prepublish": "^1.2.0",
-    "next-build-tools": "^3.9.1"
+    "next-build-tools": "^4.2.0"
   }
 }
