@@ -1,6 +1,6 @@
 'use strict';
 
-const logger = require('ft-next-logger');
+const logger = require('ft-next-logger').logger;
 
 module.exports = function(err) {
 	if (err.message.indexOf('network timeout at') > -1) {
