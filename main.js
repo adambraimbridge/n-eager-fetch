@@ -9,7 +9,7 @@ module.exports = function(url, opts) {
 	opts.retry = undefined;
 
 	function fetchAttempt() {
-		return fetch(url, opts)
+		const fetchCall = fetch(url, opts)
 			.catch(catchNetworkErrors)
 			.then(function(response) {
 				if (!response.ok && retriesLeft > 0) {
@@ -18,6 +18,12 @@ module.exports = function(url, opts) {
 				}
 				return response;
 			});
+
+		fetchCall.stopRetrying = function () {
+			retriesLeft = 0;
+		}
+
+		return fetchCall;
 	}
 
 	return fetchAttempt();
