@@ -1,6 +1,3 @@
-/*jshint -W079*/
-'use strict';
-
 const catchNetworkErrors = require('./src/catch-network-errors');
 require('isomorphic-fetch');
 
@@ -21,7 +18,7 @@ module.exports = function (url, opts) {
 
 		fetchCall.stopRetrying = function () {
 			retriesLeft = 0;
-		}
+		};
 
 		return fetchCall;
 	}

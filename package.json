@@ -2,7 +2,10 @@
   "name": "n-eager-fetch",
   "main": "main.js",
   "scripts": {
-    "prepublish": "make build"
+    "prepublish": "make build",
+    "precommit": "node_modules/.bin/secret-squirrel",
+    "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
+    "prepush": "make verify -j3"
   },
   "dependencies": {
     "@financial-times/n-logger": "^5.3.0",
@@ -10,6 +13,7 @@
     "npm-prepublish": "^1.2.2"
   },
   "devDependencies": {
+    "@financial-times/n-gage": "^1.8.25",
     "eslint": "^2.11.0",
     "lintspaces-cli": "^0.1.1"
   }
