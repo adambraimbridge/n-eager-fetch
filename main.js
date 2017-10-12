@@ -3,7 +3,7 @@ require('isomorphic-fetch');
 
 module.exports = function (url, opts) {
 	let retriesLeft = opts.retry === undefined ? 3 : opts.retry;
-	const allowedStatusCodes = opts.allowedStatusCodes;
+	const allowedStatusCodes = opts.allowedStatusCodes || [];
 	opts.retry = undefined;
 	opts.allowedStatusCodes = undefined;
 
