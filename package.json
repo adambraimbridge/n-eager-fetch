@@ -5,7 +5,8 @@
     "prepublish": "make build",
     "precommit": "node_modules/.bin/secret-squirrel",
     "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
-    "prepush": "make verify -j3"
+    "prepush": "make verify -j3",
+    "prepare": "npx snyk protect || npx snyk protect -d || true"
   },
   "dependencies": {
     "@financial-times/n-logger": "^6.0.0",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@financial-times/n-gage": "^3.6.0",
     "eslint": "^2.11.0",
-    "lintspaces-cli": "^0.1.1"
+    "lintspaces-cli": "^0.1.1",
+    "snyk": "^1.167.2"
   }
 }
